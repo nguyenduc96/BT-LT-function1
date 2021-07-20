@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai tap 3</title>
+</head>
+<body>
+<input type="number" id="input1" placeholder="Nhập vào số thứ nhất">
+<input type="number" id="input2" placeholder="Nhập vào số thứ hai">
+<button onclick="tEst()">Run</button>
+<p id="output"></p>
+<script>
+  function tEst(){
+      let a = parseInt(document.getElementById('input1').value);
+      let b = parseInt(document.getElementById('input2').value);
+      if (a > b){
+        alert("Số thứ nhất lớn hơn số thứ hai");
+      }
+      else {
+        document.getElementById('output').innerHTML = "Tổng hai số = " + (a + b);
+      }
+  }
+</script>
+</body>
+</html>

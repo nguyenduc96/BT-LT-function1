@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai tap 5</title>
+</head>
+<body>
+<script>
+    let starOne = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let starTwo = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+    let index = -1;
+    function checkStar(input){
+        for (let i = 0; i < starOne.length; i++) {
+             if (input == starOne[i]){
+                 index = i;
+                 return index;
+             }
+        }
+    }
+    let input = prompt('Nhap vao ten goi sao');
+    checkStar(input);
+    if (index == -1){
+        document.write('Khong tim thay')
+    }
+    else {
+        document.write(starTwo[index]);
+    }
+</script>
+</body>
+</html>
